@@ -15,4 +15,8 @@ struct UserMessagesAndTitles {
     static let saveTitle = "Save"
     static let iPhoneTitle = "iPhone"
     static let iPadTitle = "iPad"
+    static let chooseCameraTitle = " Choose camera"
+    static let alrightTitle = "Alright"
+    static let deviceHasNoCameraTitle = "Device has no camera."
+    static let deviceInfoTitle = "Device info"
 }
