@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DeviceHeaderView" customModule="Collections" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-2d-2En">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="100"/>
+                    <connections>
+                        <action selector="didTapHeader:" destination="iN0-l3-epB" eventType="touchUpInside" id="wMi-2u-VAj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGz-AB-0jY">
+                    <rect key="frame" x="30" y="40" width="44.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaU-a0-YS1">
+                    <rect key="frame" x="379" y="10" width="30" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="4Pc-q8-4nP"/>
+                    </constraints>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="didTapAddButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="6Cn-YZ-3w3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eGz-AB-0jY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="GZh-Vy-vRm"/>
+                <constraint firstAttribute="bottom" secondItem="yaU-a0-YS1" secondAttribute="bottom" constant="10" id="IgB-qa-hv4"/>
+                <constraint firstItem="yaU-a0-YS1" firstAttribute="leading" secondItem="Myt-2d-2En" secondAttribute="trailing" constant="6" id="KVh-Vw-b9u"/>
+                <constraint firstItem="yaU-a0-YS1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ObU-qM-hjh"/>
+                <constraint firstItem="Myt-2d-2En" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OoF-p6-KNo"/>
+                <constraint firstAttribute="bottom" secondItem="Myt-2d-2En" secondAttribute="bottom" id="S8g-Od-ycr"/>
+                <constraint firstItem="Myt-2d-2En" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ela-UX-0yw"/>
+                <constraint firstAttribute="trailing" secondItem="yaU-a0-YS1" secondAttribute="trailing" constant="5" id="epe-3T-zG4"/>
+                <constraint firstItem="eGz-AB-0jY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p3h-6P-PH1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButtonLabel" destination="yaU-a0-YS1" id="jIC-Rm-NV7"/>
+                <outlet property="deviceLabel" destination="eGz-AB-0jY" id="2fi-2l-1Sd"/>
+                <outlet property="headerButtom" destination="Myt-2d-2En" id="pNd-IS-02S"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="81.696428571428569"/>
+        </view>
+    </objects>
+</document>
